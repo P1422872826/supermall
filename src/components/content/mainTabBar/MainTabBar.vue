@@ -40,15 +40,16 @@
 </template>
 
 <script>
-import TabBar from "../../common/tabBar/TabBar";
-import TabBarItem from "../../common/tabBar/TabBarItem";
-export default {
-  name: "",
-  components: {
-    TabBar,
-    TabBarItem,
-  },
-};
+  import TabBar from "../../common/tabBar/TabBar";
+  import TabBarItem from "../../common/tabBar/TabBarItem";
+
+  export default {
+    name: "MainTabBar",
+    components: {
+      TabBar,
+      TabBarItem,
+    },
+  };
 </script>
 
 <style scoped>

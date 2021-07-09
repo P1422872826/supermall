@@ -13,7 +13,9 @@
     props: {
       recommend: {
         type: Array,
-        default: []
+        default() {
+          return []
+        }
       }
     }
   }
@@ -28,7 +30,7 @@
     text-align: center;
     margin-top: -3px;
     padding-top: 10px;
-    background-color: #fff;
+    border-bottom: 10px solid #eee;
   }
 
   .recItem img {

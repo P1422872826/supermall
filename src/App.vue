@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
     <main-tab-bar/>
   </div>
 </template>
@@ -20,7 +22,5 @@
 <style>
   @import "assets/css/base.css";
 
-  body {
-    background-color: #ccc;
-  }
+
 </style>
