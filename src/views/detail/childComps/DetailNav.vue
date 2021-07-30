@@ -50,8 +50,6 @@
     },
     mounted() {
       setTimeout(() => {
-        console.log(this.jumpTop)
-        console.log(this.bscroll)
         this.bscroll.on('scroll', (position) => {
           if (-position.y >= -this.jumpTop.params) {
             this.currentIndex = 1
@@ -65,6 +63,7 @@
             this.currentIndex = 3
           }
         })
+        console.log(this.jumpTop.rate)
       }, 1000)
     },
     methods: {

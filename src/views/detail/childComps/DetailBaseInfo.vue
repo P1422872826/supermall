@@ -8,13 +8,13 @@
       <span class="desc" v-if="goods.desc">{{goods.desc}}</span>
     </div>
 
-    <div class="colBox">
+    <div class="colBox" v-if="goods.columns && goods.services">
       <p>{{goods.columns[0]}}</p>
       <p>{{goods.columns[1]}}</p>
       <p>{{goods.services[1].name}}</p>
     </div>
 
-    <div class="serv">
+    <div class="serv" v-if="goods.services">
       <p><img :src="goods.services[1].icon" alt="">
         {{goods.services[1].name}}</p>
 

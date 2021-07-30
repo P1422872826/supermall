@@ -1,7 +1,7 @@
 <template>
   <div id="home" ref="home">
     <nav-bar class="nav-bar">
-      <div slot="center">购物车</div>
+      <div slot="center">首页</div>
     </nav-bar>
 
     <tab-control :titles="['流行', '新款', '精选']"
@@ -160,7 +160,7 @@
        */
       getScrollY(position) {
 
-        -this.$refs.tabcontrol2.$el.offsetTop >= position + 40 ? this.backTopActive = true : this.backTopActive = false
+        -this.$refs.tabcontrol2.$el.offsetTop >= position ? this.backTopActive = true : this.backTopActive = false
         // 记录当被选中的类型的Y
         switch (this.currentType) {
           case "pop":
@@ -223,7 +223,7 @@
     height: calc(100% - 49px - 40px);
     position: absolute;
     top: 40px;
-
+    overflow: hidden;
   }
 
   .backtop {

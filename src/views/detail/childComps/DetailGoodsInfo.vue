@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div v-for="item in img.detailImage[0].list" class="showImg">
       <img :src="item" alt="" @load="imgLoad">
     </div>
@@ -20,7 +19,7 @@
     },
     data() {
       return {
-        currentIndex: 0
+        currentIndex: 0,
       }
     },
     methods: {
